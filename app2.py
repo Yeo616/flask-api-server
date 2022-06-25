@@ -18,10 +18,15 @@ def root():
 
 @app.route('/act/data', methods = ['GET'])
 def act():
-    ret = {'count': 2, 'students': [ {'name':'홍길동', 'age': 30}, 
-                                     {'name': '김나나', 'age':25}]}
+    ret = {'count': 2, 'students': [ {'name':'Mike', 'age': 30}, 
+                                     {'name': 'Jeanie', 'age':25}]}
     return jsonify(ret)
-    # 우리가 만든 파이썬 딕셔너리를, 파이썬으로 만들어주는 기능
+    # 우리가 만든 파이썬 딕셔너리를, Json으로 만들어주는 기능
 
 if __name__ == '__main__':
     app.run()
+
+
+
+
+    

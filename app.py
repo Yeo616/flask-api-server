@@ -3,7 +3,9 @@ from flask import Flask
 app=Flask(__name__)
 
 # API가 있어야 한다. 아래 코드가 API
-@app.route('/', methods = ['GET'])
+@app.route("/")
+@app.route("/Home")
+@app.route("/index")
 def hello_world():
     return 'Hello World hihi'
 
